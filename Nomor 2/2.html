@@ -1,0 +1,36 @@
+<!-- 
+2. Diketahui sebuah array seperti berikut :
+Contoh array tertera https://docs.google.com/document/d/1npyfO3AHAMeP249-ilfapoQc-gJvW6_lvMXKAFa-uTU/edit#
+Susun lah array berikut berdasarkan nilai terkecil dengan membandingkan semua elemen array satu per satu.
+(Bubble Sort) Dilarang Menggunakan Build in function
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Array Sort</h2>
+
+    <p>Susun lah array berikut berdasarkan nilai terkecil dengan membandingkan semua elemen array satu per satu. (Bubble Sort).</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        var points = [20, 12, 35, 11, 17, 9, 58, 23, 69, 21];
+        document.getElementById("demo").innerHTML = points;
+
+        function myFunction() {
+            points.sort(function (a, b) { return a - b });
+            document.getElementById("demo").innerHTML = points;
+        }
+
+    </script>
+
+</body>
+
+</html>
+

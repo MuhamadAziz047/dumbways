@@ -1,0 +1,39 @@
+<!-- Buatlah function untuk mencetak pattern persegi dari karakter “#” dan “*” yang mempunyai sebuah 
+parameter sebagai nilai panjang dengan nilai parameter harus genap.
+Jika function itu dijalankan: tertera pada 
+https://docs.google.com/document/d/1npyfO3AHAMeP249-ilfapoQc-gJvW6_lvMXKAFa-uTU/edit#
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cara Membuat Looping Segitiga Dengan Javascript</title>
+</head>
+<body>
+	<pre>
+	<script type="text/javascript">
+		
+		var baris, i = 0;
+		var nilai_prompt = prompt("Tinggi: ", ""); 
+		var tinggi=parseInt(nilai_prompt);
+ 
+		for (baris = 0; baris <= tinggi ; baris++) {
+ 
+		// memBuat sejumlah spasi
+		for (i = 1; i <= tinggi - baris; i++) {
+		document.write(" "); // Karakter spasi
+		 }
+ 
+		// menampilkan bintang
+		for (i = 1; i < 2 * baris; i++) {
+		document.write("*"); }
+ 
+		// Pindah baris
+		document.write("\n"); }
+	
+	</script>
+	</pre>
+</body>
+</html>
